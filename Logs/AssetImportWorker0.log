@@ -179,3 +179,4 @@ Received Import Request.
 Start importing Assets/Resources/VuforiaConfiguration.asset using Guid(564b39b512c48e54c8aed3c0ecb0f4ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99aa7b5c65e53a3792e9dea3c362bcc5') in 0.005176 seconds 
   Import took 0.007470 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

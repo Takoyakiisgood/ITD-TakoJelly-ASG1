@@ -171,3 +171,148 @@ Received Import Request.
 Start importing Assets/SamplesResources/AugmentationAssets/Animation/Astronaut/Astronaut.controller using Guid(af60ffd73611c4ea890c503e77061ebf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20b3a58e7f8f94728512064ab7b5ed8e') in 0.070495 seconds 
   Import took 0.075157 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 2919.429950 seconds.
+  path: Assets/Resources/VuforiaConfiguration.asset
+  artifactKey: Guid(564b39b512c48e54c8aed3c0ecb0f4ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/VuforiaConfiguration.asset using Guid(564b39b512c48e54c8aed3c0ecb0f4ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b954f405b66b45e8bf8dc47be1737ed8') in 0.026720 seconds 
+  Import took 0.031182 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 212.640492 seconds.
+  path: Assets/SamplesResources/AugmentationAssets
+  artifactKey: Guid(e6eb08094278e344281d8aca9f9d8106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SamplesResources/AugmentationAssets using Guid(e6eb08094278e344281d8aca9f9d8106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '623eb634c85476c75184ba4c95478cee') in 0.010235 seconds 
+  Import took 0.013886 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.632584 seconds.
+  path: Assets/SamplesResources/AugmentationAssets/Animation
+  artifactKey: Guid(17223e52156252e48b3f7533ad515e51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SamplesResources/AugmentationAssets/Animation using Guid(17223e52156252e48b3f7533ad515e51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57d2e42bcaa379b94050aeafceca21f1') in 0.009759 seconds 
+  Import took 0.012992 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.904481 seconds.
+  path: Assets/SamplesResources/AugmentationAssets/Animation/Astronaut
+  artifactKey: Guid(dfe2792cbafe0a84587683512954a4fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SamplesResources/AugmentationAssets/Animation/Astronaut using Guid(dfe2792cbafe0a84587683512954a4fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fca15fcaf6279d8e2caa1b7a19cb0c66') in 0.011434 seconds 
+  Import took 0.014795 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.005404 seconds.
+  path: Assets/SamplesResources/SceneAssets/SamplesScripts.asmdef
+  artifactKey: Guid(5b730339290ba0f459f8410b34f31514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SamplesResources/SceneAssets/SamplesScripts.asmdef using Guid(5b730339290ba0f459f8410b34f31514) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3961de03b1f4423716a0aa7fc492f9c4') in 0.009649 seconds 
+  Import took 0.012259 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.301192 seconds.
+  path: Assets/SamplesResources/AugmentationAssets/Models/Astronaut.FBX
+  artifactKey: Guid(c6045ffd0db911d418ecf014e1fbd650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SamplesResources/AugmentationAssets/Models/Astronaut.FBX using Guid(c6045ffd0db911d418ecf014e1fbd650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71e0085202707d505f7aea1ddb7f9321') in 0.338100 seconds 
+  Import took 0.342681 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/SamplesResources/AugmentationAssets/Models/Rock1D.fbx
+  artifactKey: Guid(983886d38a2dfa14fa5778c136ecbb9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SamplesResources/AugmentationAssets/Models/Rock1D.fbx using Guid(983886d38a2dfa14fa5778c136ecbb9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5d27557dad6d10ed31e5b6934f68546') in 0.026567 seconds 
+  Import took 0.029598 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000350 seconds.
+  path: Assets/SamplesResources/AugmentationAssets/Models/Drill.FBX
+  artifactKey: Guid(49ba828ce93a445029db970bb61fb17a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SamplesResources/AugmentationAssets/Models/Drill.FBX using Guid(49ba828ce93a445029db970bb61fb17a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '731ed0ff59f7626aa097b3d490b44f3b') in 0.038715 seconds 
+  Import took 0.042060 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000353 seconds.
+  path: Assets/SamplesResources/AugmentationAssets/Models/Rock1E.fbx
+  artifactKey: Guid(1ef63c9e36fd9ae47867f4bb79c7cbb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SamplesResources/AugmentationAssets/Models/Rock1E.fbx using Guid(1ef63c9e36fd9ae47867f4bb79c7cbb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '356796d6e2c14c507bbc491b33f96e39') in 0.023622 seconds 
+  Import took 0.026768 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/SamplesResources/AugmentationAssets/Models/OxygenTank.FBX
+  artifactKey: Guid(c73e05182b7e39c46b3f7c7b76ab1d26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SamplesResources/AugmentationAssets/Models/OxygenTank.FBX using Guid(c73e05182b7e39c46b3f7c7b76ab1d26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '177334409c440241b25767cbb9558ee2') in 0.031363 seconds 
+  Import took 0.034659 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000347 seconds.
+  path: Assets/SamplesResources/AugmentationAssets/Models/Rock1A.fbx
+  artifactKey: Guid(dfb9706df9ac8264ebf1e58976096256) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SamplesResources/AugmentationAssets/Models/Rock1A.fbx using Guid(dfb9706df9ac8264ebf1e58976096256) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49d7e3600c36656904321ad5a0ab9d3e') in 0.027969 seconds 
+  Import took 0.031503 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000341 seconds.
+  path: Assets/SamplesResources/AugmentationAssets/Models/Habitat.FBX
+  artifactKey: Guid(531a4d65d89efb54db83139ba047c193) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SamplesResources/AugmentationAssets/Models/Habitat.FBX using Guid(531a4d65d89efb54db83139ba047c193) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2d469f3db763689d1e0bfc781e00f5f') in 0.075472 seconds 
+  Import took 0.078879 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000331 seconds.
+  path: Assets/SamplesResources/AugmentationAssets/Models/Rock1C.fbx
+  artifactKey: Guid(d1edb567dd56f994cbb75a74e047b18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SamplesResources/AugmentationAssets/Models/Rock1C.fbx using Guid(d1edb567dd56f994cbb75a74e047b18a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49f8f5af115715c2a4f71b71e62a1be6') in 0.022495 seconds 
+  Import took 0.026061 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000342 seconds.
+  path: Assets/SamplesResources/AugmentationAssets/Models/Rock1B.fbx
+  artifactKey: Guid(976e89866374b704f8eff32373bca69c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SamplesResources/AugmentationAssets/Models/Rock1B.fbx using Guid(976e89866374b704f8eff32373bca69c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2142e0bbe1997e207637592fe29bf802') in 0.026106 seconds 
+  Import took 0.029538 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000340 seconds.
+  path: Assets/SamplesResources/AugmentationAssets/Models/Drone.FBX
+  artifactKey: Guid(78122509d8ec13f44bf4508cb85fe4c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SamplesResources/AugmentationAssets/Models/Drone.FBX using Guid(78122509d8ec13f44bf4508cb85fe4c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd089f60947a2eec1620a3076f0857a46') in 0.040313 seconds 
+  Import took 0.043520 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.927548 seconds.
+  path: Assets/SamplesResources/AugmentationAssets/Materials/Astronaut
+  artifactKey: Guid(22bb9cd3cfee74ba6ad4d2220bf48088) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SamplesResources/AugmentationAssets/Materials/Astronaut using Guid(22bb9cd3cfee74ba6ad4d2220bf48088) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e12912314343325902a5c4eff45f39d8') in 0.003746 seconds 
+  Import took 0.007679 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.254151 seconds.
+  path: Assets/SamplesResources/AugmentationAssets/Materials/Astronaut/Astronaut.mat
+  artifactKey: Guid(175fca8ff17e17d4cb0f527c89b3d392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SamplesResources/AugmentationAssets/Materials/Astronaut/Astronaut.mat using Guid(175fca8ff17e17d4cb0f527c89b3d392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd2b96539bca30de4f1889c9bbe6bea5') in 0.265734 seconds 
+  Import took 0.269299 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000335 seconds.
+  path: Assets/SamplesResources/AugmentationAssets/Materials/Astronaut/Drill.mat
+  artifactKey: Guid(75ef9db8d65dcfb40969937fa2f6ea8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SamplesResources/AugmentationAssets/Materials/Astronaut/Drill.mat using Guid(75ef9db8d65dcfb40969937fa2f6ea8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'defe88ca2b22c3cde8efa787efc7425b') in 0.023830 seconds 
+  Import took 0.027090 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

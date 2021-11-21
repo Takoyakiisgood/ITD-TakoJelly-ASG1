@@ -206,9 +206,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1070600910}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: ViewModelScene
+      - m_Target: {fileID: 792667708}
+        m_TargetAssemblyTypeName: MainScene, Assembly-CSharp
+        m_MethodName: SanitizerCollectable
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -339,9 +339,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1070600910}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: ViewModelScene
+      - m_Target: {fileID: 792667708}
+        m_TargetAssemblyTypeName: MainScene, Assembly-CSharp
+        m_MethodName: MaskCollectable
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1497,13 +1497,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd2909ade57f59c47a9049b18a071741, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 1070600910}
+  gm: {fileID: 1070600910}
   progressBar: {fileID: 1634012603}
   progressValue: 0
   viewMask: {fileID: 30441508}
   viewShield: {fileID: 1544409358}
   viewSanitizer: {fileID: 15433335}
-  rewardsPage: {fileID: 0}
+  rewardsPage: {fileID: 1290114016}
 --- !u!4 &792667709
 Transform:
   m_ObjectHideFlags: 0
@@ -1896,12 +1896,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f27cff7e3fbb54aa7e1e263ea03551, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maskObj: {fileID: 0}
-  faceshieldObj: {fileID: 0}
-  handsanitizerObj: {fileID: 0}
   hasMask: 1
   hasShield: 1
   hasSanitizer: 0
+  StageInt: -1
 --- !u!4 &1070600911
 Transform:
   m_ObjectHideFlags: 0
@@ -2983,9 +2981,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1070600910}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: ViewModelScene
+      - m_Target: {fileID: 792667708}
+        m_TargetAssemblyTypeName: MainScene, Assembly-CSharp
+        m_MethodName: ShieldCollectable
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

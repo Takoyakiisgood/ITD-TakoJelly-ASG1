@@ -1197,6 +1197,7 @@ Start importing Assets/Image/Asset 3.png using Guid(20863cfb77a97834083114da8e1b
 
 ========================================================================
 Received Import Request.
+<<<<<<< Updated upstream
   Time since last request: 902.415688 seconds.
   path: Assets/Materials
   artifactKey: Guid(bff5a55c60724f446a4e820b6db12a0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
@@ -5593,3 +5594,28 @@ AssetImportParameters requested are different than current active one (requested
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+=======
+  Time since last request: 3054.073952 seconds.
+  path: Assets/Scenes/MainScene.unity
+  artifactKey: Guid(7a2b3dbeae4c61340a98c107be229594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainScene.unity using Guid(7a2b3dbeae4c61340a98c107be229594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc0b837e69b113b1439fe495eda360ae') in 0.012740 seconds 
+  Import took 0.042784 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.936824 seconds.
+  path: Assets/Scenes/QuestionScene.unity
+  artifactKey: Guid(d4a990a11293a9f469b9f2c3ae5e55fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/QuestionScene.unity using Guid(d4a990a11293a9f469b9f2c3ae5e55fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35a9f432e3cc461e274a1d7acfb4cbb3') in 0.016260 seconds 
+  Import took 0.019786 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 721.311679 seconds.
+  path: Assets/Scenes/MainScene.unity
+  artifactKey: Guid(7a2b3dbeae4c61340a98c107be229594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainScene.unity using Guid(7a2b3dbeae4c61340a98c107be229594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ca4fafea81015b014ee9b719d5c7f30') in 0.012417 seconds 
+  Import took 0.016736 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+>>>>>>> Stashed changes

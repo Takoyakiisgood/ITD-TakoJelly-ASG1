@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
+
 
 public class MainScene : MonoBehaviour
 {
-    public GameManager gameManager;
+    public GameManager gm;
 
     public Slider progressBar;
     public int progressValue;
@@ -16,6 +16,11 @@ public class MainScene : MonoBehaviour
     public Button viewSanitizer;
 
     public GameObject rewardsPage;
+
+    private void Awake()
+    {
+        gm = GameManager.instance;
+    }
 
     void Start()
     {
@@ -29,10 +34,35 @@ public class MainScene : MonoBehaviour
         
     }
 
+    //0 is mask, 1 is faceshield, 2 is hand sanitizer
+    public void MaskCollectable()
+    {
+        //set the Stage Int and load to the view model scene
+        gm.StageInt = 0;
+        //Debug.Log("StageInt =" + StageInt);
+        gm.ViewModelScene();
+    }
+
+    public void ShieldCollectable()
+    {
+        //set the Stage Int and load to the view model scene
+        gm.StageInt = 1;
+        //Debug.Log("StageInt =" + StageInt);
+        gm.ViewModelScene();
+    }
+
+    public void SanitizerCollectable()
+    {
+        //set the Stage Int and load to the view model scene
+        gm.StageInt = 2;
+        //Debug.Log("StageInt =" + StageInt);
+        gm.ViewModelScene();
+    }
+
     public void CheckCollectables()
     {
         //if user has mask will set button to be interactable
-        if (gameManager.hasMask == true)
+        if (gm.hasMask == true)
         {
             viewMask.interactable = true;
             progressValue++;
@@ -43,7 +73,7 @@ public class MainScene : MonoBehaviour
         }
 
         //if user has Face Shield will set button to be interactable
-        if (gameManager.hasShield == true)
+        if (gm.hasShield == true)
         {
             viewShield.interactable = true;
             progressValue++;
@@ -54,7 +84,7 @@ public class MainScene : MonoBehaviour
         }
 
         //if user has Sanitizer will set button to be interactable
-        if (gameManager.hasSanitizer == true)
+        if (gm.hasSanitizer == true)
         {
             viewSanitizer.interactable = true;
             progressValue++;

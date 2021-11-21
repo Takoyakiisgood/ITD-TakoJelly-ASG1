@@ -13,6 +13,11 @@ public class GameManager : MonoBehaviour
     public GameObject faceshieldObj;
     public GameObject handsanitizerObj;
 
+    //for progress bar
+    public bool hasMask;
+    public bool hasShield;
+    public bool hasSanitizer;
+
     // Start is called before the first frame update
     void Start()
     {

@@ -11,6 +11,11 @@ public class GameManager : MonoBehaviour
     public bool hasShield;
     public bool hasSanitizer;
 
+    //to see which poster it is
+    public bool diningPoster;
+    public bool sportsPoster;
+    public bool symptomsPoster;
+
     //0 is mask, 1 is faceshield, 2 is hand sanitizer
     public int StageInt =-1;
 

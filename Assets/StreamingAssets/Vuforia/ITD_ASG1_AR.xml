@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="safe-dining_eng" size="0.100000 0.177761" />
+    <ImageTarget name="do-your-part-in-the-fight-against-covid-19_poster" size="0.100000 0.141452" />
+    <ImageTarget name="30apr2020-covid-19-advisory-for-exercise-in-public" size="0.100000 0.140598" />
+  </Tracking>
+</QCARConfig>

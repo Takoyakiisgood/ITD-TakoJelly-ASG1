@@ -1139,3 +1139,28 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1139.306836 seconds.
+  path: Assets/Script/MainScene.cs
+  artifactKey: Guid(dd2909ade57f59c47a9049b18a071741) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/MainScene.cs using Guid(dd2909ade57f59c47a9049b18a071741) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b43cacce3e78e772262ae22047935a1') in 0.009124 seconds 
+  Import took 0.017156 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006781 seconds.
+  path: Assets/Scenes/MainScene.unity
+  artifactKey: Guid(7a2b3dbeae4c61340a98c107be229594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainScene.unity using Guid(7a2b3dbeae4c61340a98c107be229594) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '868cca6aacc0b17e767ce58b7fa47889') in 0.008468 seconds 
+  Import took 0.012702 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003657 seconds.
+  path: Assets/Script/GameManager.cs
+  artifactKey: Guid(46f27cff7e3fbb54aa7e1e263ea03551) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/GameManager.cs using Guid(46f27cff7e3fbb54aa7e1e263ea03551) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4a5dc3eb7f760a2c9e595c729d77b49') in 0.002488 seconds 
+  Import took 0.007062 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

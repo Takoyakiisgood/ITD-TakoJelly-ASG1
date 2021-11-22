@@ -16,6 +16,9 @@ public class MainScene : MonoBehaviour
     public Button viewSanitizer;
 
     public GameObject rewardsPage;
+    public GameObject voucher;
+    public GameObject notification;
+    public int notificationCount;
 
     private void Awake()
     {
@@ -27,6 +30,7 @@ public class MainScene : MonoBehaviour
         progressValue = 0;
         CheckCollectables();
         UpdateProgressBar();
+        DisplayNotification();
     }
 
     private void Update()
@@ -63,6 +67,19 @@ public class MainScene : MonoBehaviour
         gm.StageInt = 2;
         //Debug.Log("StageInt =" + StageInt);
         gm.ViewModelScene();
+    }
+
+    public void DisplayNotification()
+    {
+        if (gm.hasMask == true && gm.hasSanitizer == true && gm.hasShield == true)
+        {
+            if (notificationCount == 0)
+            {
+                notificationCount++;
+                notification.SetActive(true);
+                voucher.SetActive(true);
+            }
+        }
     }
 
     public void CheckCollectables()

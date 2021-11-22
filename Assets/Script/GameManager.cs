@@ -15,6 +15,10 @@ public class GameManager : MonoBehaviour
     // 1 symptoms, 2 exercise, 3 dining
     public int PosterInt = 0;
 
+    public bool completeDining;
+    public bool completeSymptoms;
+    public bool completeSports;
+
     //0 is mask, 1 is faceshield, 2 is hand sanitizer
     public int StageInt =-1;
 
@@ -41,9 +45,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        hasMask = true;
-        hasShield = true;
-        hasSanitizer = true;
+
     }
 
     // Update is called once per frame

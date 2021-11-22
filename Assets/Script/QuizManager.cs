@@ -28,6 +28,19 @@ public class QuizManager : MonoBehaviour
     public Text bLabel3;
     public Text cLabel3;
 
+    public int points;
+
+    public GameObject congratsPage;
+    public GameObject collectable;
+    public Text collectableText;
+    public Sprite sanitizer;
+    public Sprite mask;
+    public Sprite shield;
+
+    public GameObject gameOverPage;
+
+    public GameObject alreadyComplete;
+
     public void displayDiningQns()
     {
         question1.text = "Q1: When should you take of your mask?";
@@ -91,6 +104,46 @@ public class QuizManager : MonoBehaviour
         cLabel3.text = "Go home via private cab/transport.";
     }
 
+    public void ShowCongratsPage()
+    {
+        congratsPage.SetActive(true);
+        Debug.Log("Showing Congrats page");
+        if (gm.hasMask == false)
+        {
+            collectable.GetComponent<Image>().sprite = mask;
+            collectableText.text = "You earned a mask!";
+            gm.hasMask = true;
+        }
+        else
+        {
+            if (gm.hasSanitizer == false)
+            {
+                collectable.GetComponent<Image>().sprite = sanitizer;
+                collectableText.text = "You earned a hand sanitizer!";
+                gm.hasSanitizer = true;
+            }
+            else
+            {
+                if (gm.hasShield == false)
+                {
+                    collectable.GetComponent<Image>().sprite = shield;
+                    collectableText.text = "You earned a face shield!";
+                    gm.hasShield = true;
+                }
+            }
+        }
+    }
+
+    public void ShowGameOverPage()
+    {
+        gameOverPage.SetActive(true);
+    }
+    
+    public void BackToMainMenu()
+    {
+        gm.mainScene();
+    }
+
     public void CheckAnswer()
     {
         //dining poster
@@ -100,16 +153,30 @@ public class QuizManager : MonoBehaviour
             {
                 //correct answer
                 Debug.Log("Q1 Correct!");
+                points++;
             }
             if (toggleGrp2.ActiveToggles().FirstOrDefault() == toggleGrp2.GetComponentsInChildren<Toggle>()[2])
             {
                 //correct answer
                 Debug.Log("Q2 Correct!");
+                points++;
             }
             if (toggleGrp3.ActiveToggles().FirstOrDefault() == toggleGrp3.GetComponentsInChildren<Toggle>()[1])
             {
                 //correct answer
                 Debug.Log("Q3 Correct!");
+                points++;
+            }
+
+            if (points == 3)
+            {
+                gm.completeDining = true;
+                Debug.Log("dining poster completed.");
+                ShowCongratsPage();
+            }
+            else
+            {
+                ShowGameOverPage();
             }
 
         }
@@ -121,18 +188,30 @@ public class QuizManager : MonoBehaviour
             {
                 //correct answer
                 Debug.Log("Q1 Correct!");
+                points++;
             }
             if (toggleGrp2.ActiveToggles().FirstOrDefault() == toggleGrp2.GetComponentsInChildren<Toggle>()[1])
             {
                 //correct answer
                 Debug.Log("Q2 Correct!");
+                points++;
             }
             if (toggleGrp3.ActiveToggles().FirstOrDefault() == toggleGrp3.GetComponentsInChildren<Toggle>()[0])
             {
                 //correct answer
                 Debug.Log("Q3 Correct!");
+                points++;
             }
-
+            if (points == 3)
+            {
+                gm.completeSports = true;
+                Debug.Log("sports poster completed.");
+                ShowCongratsPage();
+            }
+            else
+            {
+                ShowGameOverPage();
+            }
         }
 
         //symptoms poster
@@ -142,18 +221,30 @@ public class QuizManager : MonoBehaviour
             {
                 //correct answer
                 Debug.Log("Q1 Correct!");
+                points++;
             }
             if (toggleGrp2.ActiveToggles().FirstOrDefault() == toggleGrp2.GetComponentsInChildren<Toggle>()[0])
             {
                 //correct answer
                 Debug.Log("Q2 Correct!");
+                points++;
             }
             if (toggleGrp3.ActiveToggles().FirstOrDefault() == toggleGrp3.GetComponentsInChildren<Toggle>()[2])
             {
                 //correct answer
                 Debug.Log("Q3 Correct!");
+                points++;
             }
-
+            if (points == 3)
+            {
+                gm.completeSymptoms = true;
+                Debug.Log("symptoms poster completed.");
+                ShowCongratsPage();
+            }
+            else
+            {
+                ShowGameOverPage();
+            }
         }
     }
 
@@ -161,15 +252,36 @@ public class QuizManager : MonoBehaviour
     {
         if (gm.PosterInt == 3)
         {
-            displayDiningQns();
+            if (gm.completeDining == true)
+            {
+                alreadyComplete.SetActive(true);
+            }
+            else
+            {
+                displayDiningQns();
+            }   
         }
         if (gm.PosterInt == 2)
         {
-            displaySportsQns();
+            if (gm.completeSports == true)
+            {
+                alreadyComplete.SetActive(true);
+            }
+            else
+            {
+                displaySportsQns();
+            }
         }
         if (gm.PosterInt == 1)
         {
-            displaySymptomsQns();
+            if (gm.completeSymptoms == true)
+            {
+                alreadyComplete.SetActive(true);
+            }
+            else
+            {
+                displaySymptomsQns();
+            }
         }
     }
 
@@ -182,6 +294,7 @@ public class QuizManager : MonoBehaviour
     void Start()
     {
         DisplayQns();
+        points = 0;
     }
 
     // Update is called once per frame

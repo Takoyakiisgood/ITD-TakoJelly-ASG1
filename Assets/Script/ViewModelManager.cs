@@ -8,6 +8,8 @@ public class ViewModelManager : MonoBehaviour
 {
     public GameObject[] MidObjects;
     public ContentPositioningBehaviour content;
+    public GameObject MidPlane;
+    public Text ButtonText;
     public GameManager gm;
 
     //get the user touch value;
@@ -41,6 +43,20 @@ public class ViewModelManager : MonoBehaviour
     void Update()
     {
         StoreTouches();
+    }
+
+    public void TogglePlane()
+    {
+        if (MidPlane.activeSelf == true)
+        {
+            MidPlane.SetActive(false);
+            ButtonText.text = "Show Positioner";
+        }
+        else 
+        {
+            MidPlane.SetActive(true);
+            ButtonText.text = "Hide Positioner";
+        }
     }
 
     private void StoreTouches()

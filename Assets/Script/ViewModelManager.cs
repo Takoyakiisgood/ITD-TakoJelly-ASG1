@@ -104,19 +104,4 @@ public class ViewModelManager : MonoBehaviour
         
     }
 
-    public void ToggleAR()
-    {
-        //check if vuforia is enabled
-        if (VuforiaBehaviour.Instance.enabled)
-        {
-            //turn off vuforia
-            VuforiaBehaviour.Instance.enabled = false;
-        }
-        //if vuforia is not enabled
-        else
-        {
-            //turn on vuforia
-            VuforiaBehaviour.Instance.enabled = true;
-        }
-    }
 }

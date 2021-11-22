@@ -1497,7 +1497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd2909ade57f59c47a9049b18a071741, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gm: {fileID: 1070600910}
+  gm: {fileID: 0}
   progressBar: {fileID: 1634012603}
   progressValue: 0
   viewMask: {fileID: 30441508}
@@ -1867,53 +1867,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1061847090}
   m_CullTransparentMesh: 1
---- !u!1 &1070600909
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1070600911}
-  - component: {fileID: 1070600910}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1070600910
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1070600909}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46f27cff7e3fbb54aa7e1e263ea03551, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hasMask: 1
-  hasShield: 1
-  hasSanitizer: 0
-  StageInt: -1
---- !u!4 &1070600911
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1070600909}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 485.84192, y: 901.1917, z: -2436.3862}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1120934832
 GameObject:
   m_ObjectHideFlags: 0
@@ -2152,9 +2105,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1070600910}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: arCamera
+      - m_Target: {fileID: 792667708}
+        m_TargetAssemblyTypeName: MainScene, Assembly-CSharp
+        m_MethodName: ScanAR
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

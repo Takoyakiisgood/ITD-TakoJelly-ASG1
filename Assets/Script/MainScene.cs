@@ -34,6 +34,12 @@ public class MainScene : MonoBehaviour
         
     }
 
+    public void ScanAR()
+    {
+        //go to AR camera scene
+        gm.arCamera();
+    }
+
     //0 is mask, 1 is faceshield, 2 is hand sanitizer
     public void MaskCollectable()
     {

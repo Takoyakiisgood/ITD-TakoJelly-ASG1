@@ -93,7 +93,7 @@ public class QuizManager : MonoBehaviour
 
     public void CheckAnswer()
     {
-        if (gm.diningPoster == true)
+        if (gm.PosterInt == 1)
         {
             if (toggleGrp1.ActiveToggles().FirstOrDefault() == toggleGrp1.GetComponentsInChildren<Toggle>()[0])
             {
@@ -110,7 +110,7 @@ public class QuizManager : MonoBehaviour
 
         }
 
-        if (gm.sportsPoster == true)
+        if (gm.PosterInt == 2)
         {
             if (toggleGrp1.ActiveToggles().FirstOrDefault() == toggleGrp1.GetComponentsInChildren<Toggle>()[2])
             {
@@ -127,7 +127,7 @@ public class QuizManager : MonoBehaviour
 
         }
 
-        if (gm.symptomsPoster == true)
+        if (gm.PosterInt == 3)
         {
             if (toggleGrp1.ActiveToggles().FirstOrDefault() == toggleGrp1.GetComponentsInChildren<Toggle>()[1])
             {
@@ -143,6 +143,11 @@ public class QuizManager : MonoBehaviour
             }
 
         }
+    }
+
+    private void Awake()
+    {
+        gm = GameManager.instance;
     }
 
     // Start is called before the first frame update

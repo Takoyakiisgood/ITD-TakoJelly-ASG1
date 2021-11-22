@@ -30,19 +30,19 @@ public class QuizManager : MonoBehaviour
 
     public void displayDiningQns()
     {
-        question1.text = "When should you take of your mask?";
+        question1.text = "Q1: When should you take of your mask?";
         // correct answer V
         aLabel1.text = "When consuming food and drinks.";
         bLabel1.text = "When talking to your friends while not consuming anything.";
         cLabel1.text = "When ordering your food from the stall.";
 
-        question2.text = "What do you do after your meal?";
+        question2.text = "Q2: What do you do after your meal?";
         aLabel2.text = "Leave the table unmasked.";
         bLabel2.text = "Leave your trays and crockery on the table and leave immediately.";
         // correct answer V
         cLabel2.text = "Return your trays and crockery and throw away disposables in the bin.";
 
-        question3.text = "Where should you sit?";
+        question3.text = "Q3: Where should you sit?";
         aLabel3.text = "Together with 5 other patrons on marked seats.";
         // correct answer V
         bLabel3.text = "On unmarked seats.";
@@ -51,19 +51,19 @@ public class QuizManager : MonoBehaviour
 
     public void displaySportsQns()
     {
-        question1.text = "Who should you exercise with?";
+        question1.text = "Q1: Who should you exercise with?";
         aLabel1.text = "Exercise with 5 other friends.";
         bLabel1.text = "Exercise with 5 other family members.";
         // correct answer V
         cLabel1.text = "Exercise alone.";
 
-        question2.text = "What do you do if you need to drink water?";
+        question2.text = "Q2: What do you do if you need to drink water?";
         aLabel2.text = "Drink from a public water cooler/fountain.";
         // correct answer V
         bLabel2.text = "Drink from your own water bottle.";
         cLabel2.text = "Drink from your friend's bottle";
 
-        question3.text = "What do you do after your exercise?";
+        question3.text = "Q3: What do you do after your exercise?";
         // correct answer V
         aLabel3.text = "Put on your mask immediately.";
         bLabel3.text = "Rest on the bench with mask off for the next 30 minutes";
@@ -72,19 +72,19 @@ public class QuizManager : MonoBehaviour
 
     public void displaySymptomsQns()
     {
-        question1.text = "What are the symptoms of Covid-19?";
+        question1.text = "Q1: What are the symptoms of Covid-19?";
         aLabel1.text = "Runny nose, Difficult7y breathing, Sore throat, Cough, Fever, Stomachache.";
         // correct answer V
         bLabel1.text = "Difficulty breathing, Fever, Running nose, Sore throat, Cough, Loss of sense of smell.";
         cLabel1.text = "Diarrhea, Difficulty breathing, Sore throat, Cough, Fever, Loss of sense of smell.";
 
-        question2.text = "What should you do if you have symptoms of Covid-19?";
+        question2.text = "Q2: What should you do if you have symptoms of Covid-19?";
         // correct answer V
         aLabel2.text = "Visit a Public Health Preparedness Clinic (PHPC) immediately.";
         bLabel2.text = "Continue with your daily activity at work/school.";
         cLabel2.text = "Visit your friend and ask them what to do.";
 
-        question3.text = "What should you do after a Swab Test?";
+        question3.text = "Q3: What should you do after a Swab Test?";
         aLabel3.text = "Go to the supermarket to buy your daily necessities.";
         bLabel3.text = "Go and meet your friends.";
         // correct answer V
@@ -93,55 +93,83 @@ public class QuizManager : MonoBehaviour
 
     public void CheckAnswer()
     {
-        if (gm.PosterInt == 1)
+        //dining poster
+        if (gm.PosterInt == 3)
         {
             if (toggleGrp1.ActiveToggles().FirstOrDefault() == toggleGrp1.GetComponentsInChildren<Toggle>()[0])
             {
                 //correct answer
+                Debug.Log("Q1 Correct!");
             }
             if (toggleGrp2.ActiveToggles().FirstOrDefault() == toggleGrp2.GetComponentsInChildren<Toggle>()[2])
             {
                 //correct answer
+                Debug.Log("Q2 Correct!");
             }
             if (toggleGrp3.ActiveToggles().FirstOrDefault() == toggleGrp3.GetComponentsInChildren<Toggle>()[1])
             {
                 //correct answer
+                Debug.Log("Q3 Correct!");
             }
 
         }
 
+        //sports poster
         if (gm.PosterInt == 2)
         {
             if (toggleGrp1.ActiveToggles().FirstOrDefault() == toggleGrp1.GetComponentsInChildren<Toggle>()[2])
             {
                 //correct answer
+                Debug.Log("Q1 Correct!");
             }
             if (toggleGrp2.ActiveToggles().FirstOrDefault() == toggleGrp2.GetComponentsInChildren<Toggle>()[1])
             {
                 //correct answer
+                Debug.Log("Q2 Correct!");
             }
             if (toggleGrp3.ActiveToggles().FirstOrDefault() == toggleGrp3.GetComponentsInChildren<Toggle>()[0])
             {
                 //correct answer
+                Debug.Log("Q3 Correct!");
             }
 
         }
 
-        if (gm.PosterInt == 3)
+        //symptoms poster
+        if (gm.PosterInt == 1)
         {
             if (toggleGrp1.ActiveToggles().FirstOrDefault() == toggleGrp1.GetComponentsInChildren<Toggle>()[1])
             {
                 //correct answer
+                Debug.Log("Q1 Correct!");
             }
             if (toggleGrp2.ActiveToggles().FirstOrDefault() == toggleGrp2.GetComponentsInChildren<Toggle>()[0])
             {
                 //correct answer
+                Debug.Log("Q2 Correct!");
             }
             if (toggleGrp3.ActiveToggles().FirstOrDefault() == toggleGrp3.GetComponentsInChildren<Toggle>()[2])
             {
                 //correct answer
+                Debug.Log("Q3 Correct!");
             }
 
+        }
+    }
+
+    public void DisplayQns()
+    {
+        if (gm.PosterInt == 3)
+        {
+            displayDiningQns();
+        }
+        if (gm.PosterInt == 2)
+        {
+            displaySportsQns();
+        }
+        if (gm.PosterInt == 1)
+        {
+            displaySymptomsQns();
         }
     }
 
@@ -153,9 +181,7 @@ public class QuizManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        toggleGrp1 = GetComponent<ToggleGroup>();
-        toggleGrp2 = GetComponent<ToggleGroup>();
-        toggleGrp3 = GetComponent<ToggleGroup>();
+        DisplayQns();
     }
 
     // Update is called once per frame

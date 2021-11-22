@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public bool hasSanitizer;
 
     //to see which poster it is
+    // 1 symptoms, 2 exercise, 3 dining
     public int PosterInt = 0;
 
     //0 is mask, 1 is faceshield, 2 is hand sanitizer

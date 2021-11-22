@@ -127,4 +127,9 @@ public class MainScene : MonoBehaviour
     {
         rewardsPage.SetActive(true);
     }
+
+    public void ExitApplication()
+    {
+        Application.Quit();
+    }
 }

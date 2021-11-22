@@ -86,7 +86,7 @@ public class QuizManager : MonoBehaviour
     public void displaySymptomsQns()
     {
         question1.text = "Q1: What are the symptoms of Covid-19?";
-        aLabel1.text = "Runny nose, Difficult7y breathing, Sore throat, Cough, Fever, Stomachache.";
+        aLabel1.text = "Runny nose, Difficulty breathing, Sore throat, Cough, Fever, Stomachache.";
         // correct answer V
         bLabel1.text = "Difficulty breathing, Fever, Running nose, Sore throat, Cough, Loss of sense of smell.";
         cLabel1.text = "Diarrhea, Difficulty breathing, Sore throat, Cough, Fever, Loss of sense of smell.";

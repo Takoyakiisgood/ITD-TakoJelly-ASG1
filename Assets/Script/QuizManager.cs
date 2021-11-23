@@ -43,6 +43,12 @@ public class QuizManager : MonoBehaviour
 
     public GameObject losingAudioPrefab;
     public GameObject victoryAudioPrefab;
+    public GameObject feedbackAudioPrefab;
+
+    public void PlayFeedbackAudio()
+    {
+        GameObject audioObj = Instantiate(feedbackAudioPrefab, transform.position, Quaternion.identity, null);
+    }
 
     public void displayDiningQns()
     {
@@ -298,6 +304,9 @@ public class QuizManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        toggleGrp1.SetAllTogglesOff();
+        toggleGrp2.SetAllTogglesOff();
+        toggleGrp3.SetAllTogglesOff();
         DisplayQns();
         points = 0;
     }

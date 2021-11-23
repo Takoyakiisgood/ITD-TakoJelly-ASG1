@@ -1694,6 +1694,10 @@ MonoBehaviour:
   shield: {fileID: 21300000, guid: 20863cfb77a97834083114da8e1b893c, type: 3}
   gameOverPage: {fileID: 139601840}
   alreadyComplete: {fileID: 1520863563}
+  losingAudioPrefab: {fileID: 5919862276717740288, guid: f1a966bf5357a354899abd213cb3f35d,
+    type: 3}
+  victoryAudioPrefab: {fileID: 203835009032405492, guid: cde7166a51a39b4458071b7585046c48,
+    type: 3}
 --- !u!4 &614988444
 Transform:
   m_ObjectHideFlags: 0

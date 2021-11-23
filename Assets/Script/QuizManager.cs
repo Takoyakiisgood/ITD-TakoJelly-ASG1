@@ -41,6 +41,9 @@ public class QuizManager : MonoBehaviour
 
     public GameObject alreadyComplete;
 
+    public GameObject losingAudioPrefab;
+    public GameObject victoryAudioPrefab;
+
     public void displayDiningQns()
     {
         question1.text = "Q1: When should you take of your mask?";
@@ -107,6 +110,7 @@ public class QuizManager : MonoBehaviour
     public void ShowCongratsPage()
     {
         congratsPage.SetActive(true);
+        GameObject audioObj = Instantiate(victoryAudioPrefab, transform.position, Quaternion.identity, null);
         Debug.Log("Showing Congrats page");
         if (gm.hasMask == false)
         {
@@ -137,6 +141,7 @@ public class QuizManager : MonoBehaviour
     public void ShowGameOverPage()
     {
         gameOverPage.SetActive(true);
+        GameObject audioObj = Instantiate(losingAudioPrefab, transform.position, Quaternion.identity, null);
     }
     
     public void BackToMainMenu()
